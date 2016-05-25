@@ -1,0 +1,20 @@
+<div class="hero-unit">
+    <h3>Welcome to our Business World!</h3>
+</div>
+<div class="world ng-scope">
+    <div class="company" ng-class="{'public':(company.companyType == 'public'), 'bankrupt':(company.companyType == 'bankrupt')}" ng-repeat="company in companyList">
+        <span class="name">{{company.companyName}}</span>
+        <span class="name">Assets</span>
+        <li ng-repeat="asset in company.companyAssets track by $index">{{asset}}</li>
+        <span class="name">Prodcut List</span>
+        <li ng-repeat="product in company.productList track by $index">{{product}}</li>
+    </div>
+</div>
+<!-- <ul class="assets" ng-repeat>{{company-assets}} </ul> -->
+<div class="input-append">
+    <input type="text" id="inputCompany" placeholder="Business Name" size="15" ng-model="input.newCompanyName"></input>
+    <button class="btn btn-inverse" id="addCompanyBtn" type="button" ng-disabled="!input.newCompanyName" ng-click="createCompany()">Create!</button>
+</div>
+<button class="btn btn-inverse" id="bankruptBtn" type="button" ng-click="bankruptCompay()">Bankrupt Company</button>
+
+<!-- <button class="btn btn-inverse" id="addProductBtn" type="button" ng-click="addProductCompay()">Add Product</button> -->

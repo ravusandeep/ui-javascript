@@ -1,0 +1,41 @@
+{
+    "data": [{
+        "companyName": "EPAM",
+        "companyType": "company",
+        "companyAssets": [
+            "PHP",
+            ".net",
+            "Java",
+            "Mobile",
+            "Objective-C",
+            "Python"
+        ],
+        "productList": [
+            "Research"
+        ]
+    }, {
+        "companyName": "Parallels",
+        "companyType": "public",
+        "companyAssets": [
+            "PHP",
+            "Java",
+            "C++",
+            "iOS Development",
+            "C#",
+            "Ember.js"
+        ],"productList":[
+        ]
+    }, {
+        "companyName": "XXX company",
+        "companyType": "bankrupt",
+        "companyAssets": [
+            "PHP",
+            "Java",
+            "C++",
+            "iOS Development",
+            "C#",
+            "Ember.js"
+        ],"productList":[
+        ]
+    }]
+}
